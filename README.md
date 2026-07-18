@@ -338,8 +338,17 @@ Performed detailed waveform analysis and documented verification results.
 
 ## License
 
-The RTL implementation in this repository is based on the open-source **dpretet/async_fifo** project, released under the MIT License.
+The RTL implementation in this repository is based on the open-source **dpretet/async_fifo** project, distributed under the MIT License. The original `LICENSE` file is retained in this repository.
 
-The custom verification environment, documentation, waveform analysis, verification methodology, and testbench were developed for this repository.
+### Original Work in This Repository
 
-Please refer to the original repository for the complete RTL license information.
+The following components were independently developed for this repository by **Divy Thakkar (2026)**:
+
+- Custom self-checking SystemVerilog verification testbench
+- Golden queue scoreboard
+- Verification methodology
+- Waveform analysis and documentation
+- Test case design and validation
+- GitHub documentation (README)
+
+These original contributions verify the functionality of the asynchronous FIFO implementation but do not replace or modify the original RTL license.
