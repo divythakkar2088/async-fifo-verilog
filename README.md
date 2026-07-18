@@ -1,5 +1,6 @@
 
 Asynchronous FIFO in SystemVerilog with Self-Checking Verification
+A SystemVerilog implementation and verification of a dual-clock asynchronous FIFO using Gray-code pointers, 2-Flip-Flop synchronizers, and a custom self-checking testbench with 69 automated verification checks.
 
 Show Image
 Show Image
@@ -326,37 +327,19 @@ Implemented 8 directed and randomized verification scenarios.
 Performed detailed waveform analysis and documented verification results.
 
 
-Future Improvements
+## Future Improvements
 
+- SystemVerilog Assertions (SVA)
+- Functional Coverage
+- UVM Verification Environment
+- FPGA Hardware Validation
 
-SystemVerilog Assertions (SVA)
-Functional Coverage
-UVM Verification Environment
-FPGA Hardware Validation
+---
 
+## License
 
-License
+The RTL implementation in this repository is based on the open-source **dpretet/async_fifo** project, released under the MIT License.
 
-The RTL implementation in this repository is based on the open-source dpretet/async_fifo project, released under the MIT License.
+The custom verification environment, documentation, waveform analysis, verification methodology, and testbench were developed for this repository.
 
-The custom verification environment, documentation, waveform analysis, and verification notes were developed for this repository.
-Contentcase 1 reset 
-Verification Note: FWFT (First-Word-Fall-Through) Timing Behavior
-
-Observation made during waveform debug of async_fifo_tb.sv (single write → single read test).
-
-What I noticed
-
-While reviewing the waveform, rdata transitioned from XX to the written value (a5)
-~112 ns before ripasted/*
- * Copyright (c) 2026 Divy Thakkar
- *
- * Custom self-checking SystemVerilog testbench developed for
- * verification of an asynchronous FIFO.
- *
- * Features:
- * - Reset verification
- * - Single write/read verification
- * - FIFO full detection
- * - FIFO empty detection
- * - Overflow protpasted
+Please refer to the original repository for the complete RTL license information.
