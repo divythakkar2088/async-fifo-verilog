@@ -1,29 +1,36 @@
 
-Asynchronous FIFO in SystemVerilog with Self-Checking Verification
-A SystemVerilog implementation and verification of a dual-clock asynchronous FIFO using Gray-code pointers, 2-Flip-Flop synchronizers, and a custom self-checking testbench with 69 automated verification checks.
+# Parameterized Asynchronous FIFO with Self-Checking SystemVerilog Verification
 
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
+> **A complete verification project for a dual-clock asynchronous FIFO implementing the Cummings Gray-code pointer architecture, featuring Clock Domain Crossing (CDC) synchronization, First-Word Fall-Through (FWFT) operation, and a custom self-checking SystemVerilog testbench with 69 automated verification checks and zero errors.**
 
-A dual-clock asynchronous FIFO implementing the classic Cummings Gray-code pointer architecture for safe Clock Domain Crossing (CDC).
+---
 
-This repository contains:
+## Project Overview
 
+This repository presents the design verification of a **parameterized dual-clock asynchronous FIFO** used for reliable data transfer between independent clock domains.
 
-Parameterized SystemVerilog RTL implementation
-Custom self-checking SystemVerilog testbench
-Golden queue scoreboard
-8 directed and randomized verification test cases
-Waveform analysis for every verification scenario
-Final verification summary with 69 automated checks and 0 errors
+The project focuses on understanding and validating the key concepts behind asynchronous FIFO operation, including:
 
+- Gray-code read and write pointer generation
+- Two Flip-Flop (2-FF) Clock Domain Crossing (CDC) synchronizers
+- Safe Full, Empty, Almost-Full and Almost-Empty flag generation
+- First-Word Fall-Through (FWFT) read behavior
+- Comprehensive self-checking verification using a custom SystemVerilog testbench
+- Automated scoreboard-based data integrity checking
+- Directed and randomized verification with **69 automated checks and 0 errors**
 
-The objective of this project is to understand, verify, and document a CDC-safe asynchronous FIFO architecture commonly used in FPGA and ASIC designs.
+---
 
+## Project Highlights
+
+- ✅ Parameterized SystemVerilog RTL
+- ✅ Custom Self-Checking Verification Testbench
+- ✅ Golden Queue Scoreboard
+- ✅ 8 Verification Test Cases
+- ✅ Detailed Waveform Analysis
+- ✅ CDC Verification
+- ✅ FWFT Verification
+- ✅ Zero Functional Errors
 
 Table of Contents
 
