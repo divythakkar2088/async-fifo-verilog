@@ -59,18 +59,19 @@ Randomized CDC stress verification
 
 
 
-Repository Structure
+## Repository Structure
 
+```text
 async-fifo-verilog/
 ├── rtl/
-│   ├── async_fifo.v         # Top-level FIFO wrapper
-│   ├── fifomem.v            # Dual-port memory array
-│   ├── wptr_full.v          # Write pointer, Gray counter, full/awfull logic
-│   ├── rptr_empty.v         # Read pointer, Gray counter, empty/arempty logic
-│   ├── sync_r2w.v           # 2-FF synchronizer: read domain -> write domain
-│   └── sync_w2r.v           # 2-FF synchronizer: write domain -> read domain
+│   ├── async_fifo.v
+│   ├── fifomem.v
+│   ├── wptr_full.v
+│   ├── rptr_empty.v
+│   ├── sync_r2w.v
+│   └── sync_w2r.v
 ├── sim/
-│   └── async_fifo_unit_test.sv   # Self-checking testbench (this project)
+│   └── async_fifo_unit_test.sv
 ├── doc/
 │   └── images/
 │       ├── 01_reset.jpeg
@@ -83,7 +84,7 @@ async-fifo-verilog/
 │       ├── 08_final_flush.jpeg
 │       └── 09_final_tcl.jpeg
 └── README.md
-
+```
 
 FIFO Architecture
 
